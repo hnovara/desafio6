@@ -7,14 +7,39 @@ console.log(title.innerHTML);
 
 // Ejercicio 3
 
-// Integrante 1
-const firstName = document.getElementById('firstName');
-const secondName = document.getElementById('secondName');
-const firstLastName = document.getElementById('firstLastName');
+function createFullName(HTMLList) {
+    let fullName = "";
+    for (let index = 0; index < HTMLList.length; index++) {
+        const element = HTMLList[index];
+        if (element.tagName === "DD" && element.innerText) {
+            if (fullName) {
+                fullName = fullName.concat(" ")
+            }
+            fullName = fullName.concat(`${element.innerText}`);
+        }
+    }
+    return `"${fullName}"`;
+}
 
-// Integrante 2
-const firstName2 = document.getElementById('firstName2');
-const secondName2 = document.getElementById('secondName2');
-const firstLastName2 = document.getElementById('firstLastName2');
 
-console.log(`-----\nIntegrante 1: "${firstName.innerHTML} ${secondName.innerHTML} ${firstLastName.innerHTML.toUpperCase()}"\nIntegrante 2: "${firstName2.innerHTML} ${secondName2.innerHTML} ${firstLastName2.innerHTML.toUpperCase()}"\n-----`)
+const divList = document.getElementById("divList").children;
+
+
+function showList(list) {
+     let string = "";
+     for (let i = 0; i < list.length; i++) {
+         const elementList = list[i];
+         if (elementList.tagName === "H2") {
+             string = string.concat(`${elementList.innerText}: `)
+         }
+         if (elementList.tagName === "DL") {
+             string = string.concat(
+                 createFullName(elementList.children) + "\n"
+             )
+         }
+     }
+     return string
+ }
+
+ console.log(showList(divList))
+
