@@ -13,7 +13,11 @@ h1 {
 h2 {
     color: rgb(11, 11, 125);
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.h2-margin-top {
+    margin-top: 3rem;
 }
 
 dt {
@@ -23,6 +27,7 @@ dt {
 
 dd {
     margin: 0;
+    margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: 500;
     color: rgb(32, 32, 32);
@@ -31,7 +36,7 @@ dd {
 div {
     border: 1px solid #E0E0E0;
     border-radius: 8px;
-    padding: 1rem;
+    padding: 1.5rem 3rem 1.5rem 3rem;
 }
 
 .container {
