@@ -77,18 +77,56 @@ const name4 = document.getElementById("secondName2").textContent;
 function compareNames() {
     let match1 = "";
     let match2 = "";
+    let n1 = "";
+    let n2 = "";
     
     if (name1 === name3 || name1 === name4) {
         const match1 = name1; 
         console.log(`Hay coincidencia en el nombre ${match1}`);
+        n1 = prompt("Hay coincidencia en el nombre\nIngrese un color para destacar el nombre");
+        // console.log(n1)
        } else if (name2 === name3 || name2 === name4) {
         const match2 = name2; 
         console.log(`Hay coincidencia en el nombre ${match2}`);
+        n2 = prompt("Hay coincidencia en el nombre\nIngrese un color para destacar el nombre");
+        // console.log(n2)
        } else {
         console.log("No hay coincidencias en los nombres");
     }
 }
 compareNames();
+
+const confirmLastName = confirm('¿Desea comparar los apellidos?');
+
+// Obtener los elementos de los apellidos
+const lastName1 = document.getElementById("firstLastName").textContent;
+const lastName2 = document.getElementById("secondLastName").textContent;
+const lastName3 = document.getElementById("firstLastName2").textContent;
+const lastName4 = document.getElementById("secondLastName2").textContent;
+
+if (confirmLastName) {
+    function compareLastNames() {
+        let match2 = "";
+        let match3 = "";
+        let n3 = "";
+        let n4 = "";
+        
+        if (lastName1 === lastName3 || lastName1 === lastName4) {
+            const match2 = lastName1; 
+            console.log(`Hay coincidencia en del apellido ${match2}`);
+            n3 = prompt("Hay coincidencia en del apellido\nIngrese un color para destacar del apellido");
+            // console.log(n1)
+           } else if (lastName2 === lastName3 || lastName2 === lastName4) {
+            const match3 = lastName2; 
+            console.log(`Hay coincidencia en del apellido ${match3}`);
+            n4 = prompt("Hay coincidencia en del apellido\nIngrese un color para destacar del apellido");
+            // console.log(n2)
+           } else {
+            console.log("No hay coincidencias en los apellidos");
+        }
+    }
+    compareLastNames();
+}
 
 
 /* --------------------------------- */
@@ -106,11 +144,4 @@ setRed('Sánchez', 'red');
 
 // Comparar los apellidos
 
-const confirmLastName = confirm('¿Desea comparar los apellidos?');
-
-if (confirmLastName) {
-    // Realizar la misma lógica pero con los apellidos;
-} else {
-
-}
 
