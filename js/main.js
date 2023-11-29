@@ -60,18 +60,36 @@ const name4 = document.getElementById("secondName2").textContent;
 
 // Comparar los nombres ---> Evaluar todas las combinaciones posibles
 
+// function compareNames() {
+//     if (name1 === name2 || name1 === name3 || name1 === name4 ||
+//         name2 === name3 || name2 === name4 ||
+//         name3 === name4) {
+//         prompt("Hay coincidencia en los nombres.\nIngrese un color para destacar los nombres"); // Almacenar la respuesta en una variable */
+//         console.log("Hay coincidencia en los nombres");
+//     } else {
+//         console.log("No hay coincidencia en los nombres");
+//     }
+// }
+
+// compareNames();
+
+
 function compareNames() {
-    if (name1 === name2 || name1 === name3 || name1 === name4 ||
-        name2 === name3 || name2 === name4 ||
-        name3 === name4) {
-        prompt("Hay coincidencia en los nombres.\nIngrese un color para destacar los nombres"); // Almacenar la respuesta en una variable */
-        console.log("Hay coincidencia en los nombres");
-    } else {
-        console.log("No hay coincidencia en los nombres");
+    let match1 = "";
+    let match2 = "";
+    
+    if (name1 === name3 || name1 === name4) {
+        const match1 = name1; 
+        console.log(`Hay coincidencia en el nombre ${match1}`);
+       } else if (name2 === name3 || name2 === name4) {
+        const match2 = name2; 
+        console.log(`Hay coincidencia en el nombre ${match2}`);
+       } else {
+        console.log("No hay coincidencias en los nombres");
     }
 }
-
 compareNames();
+
 
 /* --------------------------------- */
 
@@ -96,4 +114,3 @@ if (confirmLastName) {
 
 }
 
-prompt('hola')
