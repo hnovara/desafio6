@@ -113,13 +113,13 @@ if (confirmLastName) {
         
         if (lastName1 === lastName3 || lastName1 === lastName4) {
             const match2 = lastName1; 
-            console.log(`Hay coincidencia en del apellido ${match2}`);
-            n3 = prompt("Hay coincidencia en del apellido\nIngrese un color para destacar del apellido");
+            console.log(`Hay coincidencia en el apellido ${match2}`);
+            n3 = prompt("Hay coincidencia en el apellido\nIngrese un color para destacar el apellido");
             // console.log(n1)
            } else if ((lastName2 === lastName3 || lastName2 === lastName4) && (lastName2)){
             const match3 = lastName2; 
-            console.log(`Hay coincidencia en del apellido ${match3}`);
-            n4 = prompt("Hay coincidencia en del apellido\nIngrese un color para destacar del apellido");
+            console.log(`Hay coincidencia en el apellido ${match3}`);
+            n4 = prompt("Hay coincidencia en el apellido\nIngrese un color para destacar dl apellido");
             // console.log(n2)
            } else {
             console.log("No hay coincidencias en los apellidos");
