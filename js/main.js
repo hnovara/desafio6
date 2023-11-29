@@ -85,7 +85,7 @@ function compareNames() {
         console.log(`Hay coincidencia en el nombre ${match1}`);
         n1 = prompt("Hay coincidencia en el nombre\nIngrese un color para destacar el nombre");
         // console.log(n1)
-       } else if (name2 === name3 || name2 === name4) {
+       } else if ((name2 === name3 || name2 === name4) && (name2)) {
         const match2 = name2; 
         console.log(`Hay coincidencia en el nombre ${match2}`);
         n2 = prompt("Hay coincidencia en el nombre\nIngrese un color para destacar el nombre");
@@ -116,7 +116,7 @@ if (confirmLastName) {
             console.log(`Hay coincidencia en del apellido ${match2}`);
             n3 = prompt("Hay coincidencia en del apellido\nIngrese un color para destacar del apellido");
             // console.log(n1)
-           } else if (lastName2 === lastName3 || lastName2 === lastName4) {
+           } else if ((lastName2 === lastName3 || lastName2 === lastName4) && (lastName2)){
             const match3 = lastName2; 
             console.log(`Hay coincidencia en del apellido ${match3}`);
             n4 = prompt("Hay coincidencia en del apellido\nIngrese un color para destacar del apellido");
