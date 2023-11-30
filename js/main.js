@@ -59,40 +59,28 @@ const name3 = document.getElementById("firstName2").textContent;
 const name4 = document.getElementById("secondName2").textContent;
 
 function compareNames() {
-    let match1 = "";
-    let match2 = "";
-    let match3 = "";
-    let match4 = "";
     let n1 = "";
     
     if (name1 === name3) {
-        const match1 = name1; 
-        console.log(`Hay coincidencia en el nombre ${match1}`);
+        console.log(`Hay coincidencia en el nombre ${name1}`);
         n1 = prompt("Hay coincidencia en el nombre\nIngrese un color para destacar el nombre");
         firstName.style=`color: ${[n1]}`
         firstName2.style=`color: ${[n1]}`
-        // console.log(n1)
         } else if (name1 === name4) {
-        const match2 = name1; 
-        console.log(`Hay coincidencia en el nombre ${match2}`);
+        console.log(`Hay coincidencia en el nombre ${name1}`);
         n1 = prompt("Hay coincidencia en el nombre\nIngrese un color para destacar el nombre");
         firstName.style=`color: ${[n1]}`
         secondName2.style=`color: ${[n1]}`
-        // console.log(n1)
         } else if ((name2 === name3) && (name2)) {
-        const match3 = name2; 
-        console.log(`Hay coincidencia en el nombre ${match3}`);
+        console.log(`Hay coincidencia en el nombre ${name2}`);
         n1 = prompt("Hay coincidencia en el nombre\nIngrese un color para destacar el nombre");
         secondName.style=`color: ${[n1]}`
         firstName2.style=`color: ${[n1]}`
-        // console.log(n1)
         } else if ((name2 === name4) && (name2)) {
-        const match4 = name2; 
-        console.log(`Hay coincidencia en el nombre ${match4}`);
+        console.log(`Hay coincidencia en el nombre ${name2}`);
         n1 = prompt("Hay coincidencia en el nombre\nIngrese un color para destacar el nombre");
         secondName.style=`color: ${[n1]}`
         secondName2.style=`color: ${[n1]}`
-        // console.log(n1)
         } else {
         console.log("No hay coincidencias en los nombres");
     }
@@ -110,40 +98,28 @@ const lastName4 = document.getElementById("secondLastName2").textContent;
 
 if (confirmLastName) {
     function compareLastNames() {
-        let match5 = "";
-        let match6 = "";
-        let match7 = "";
-        let match8 = "";
         let n2 = "";
-        
+
         if (lastName1 === lastName3) {
-            const match5 = lastName1; 
-            console.log(`Hay coincidencia en el apellido ${match5}`);
+            console.log(`Hay coincidencia en el apellido ${lastName1}`);
             n2 = prompt("Hay coincidencia en el apellido\nIngrese un color para destacar el apellido");
             firstLastName.style=`color: ${[n2]}`
             firstLastName2.style=`color: ${[n2]}`
-            // console.log(n2)
             } else if (lastName1 === lastName4) {
-            const match6 = lastName1; 
-            console.log(`Hay coincidencia en el apellido ${match6}`);
+            console.log(`Hay coincidencia en el apellido ${lastName1}`);
             n2 = prompt("Hay coincidencia en el apellido\nIngrese un color para destacar el apellido");
             firstLastName.style=`color: ${[n2]}`
             secondLastName2.style=`color: ${[n2]}`
-            // console.log(n2)
             } else if ((lastName2 === lastName3) && (lastName2)) {
-            const match7 = lastName2; 
-            console.log(`Hay coincidencia en el apellido ${match7}`);
+            console.log(`Hay coincidencia en el apellido ${lastName2}`);
             n2 = prompt("Hay coincidencia en el apellido\nIngrese un color para destacar el apellido");
             secondLastName.style=`color: ${[n2]}`
             firstLastName2.style=`color: ${[n2]}`
-            // console.log(n2)
             } else if ((lastName2 === lastName4) && (lastName2)) {
-            const match8 = lastName2; 
-            console.log(`Hay coincidencia en el apellido ${match8}`);
+            console.log(`Hay coincidencia en el apellido ${lastName2}`);
             n2 = prompt("Hay coincidencia en el apellido\nIngrese un color para destacar el apellido");
             secondLastName.style=`color: ${[n2]}`
             secondLastName2.style=`color: ${[n2]}`
-            // console.log(n2)
             } else {
             console.log("No hay coincidencias en los apellidos");
         }
