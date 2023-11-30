@@ -58,22 +58,6 @@ const name2 = document.getElementById("secondName").textContent;
 const name3 = document.getElementById("firstName2").textContent;
 const name4 = document.getElementById("secondName2").textContent;
 
-// Comparar los nombres ---> Evaluar todas las combinaciones posibles
-
-// function compareNames() {
-//     if (name1 === name2 || name1 === name3 || name1 === name4 ||
-//         name2 === name3 || name2 === name4 ||
-//         name3 === name4) {
-//         prompt("Hay coincidencia en los nombres.\nIngrese un color para destacar los nombres"); // Almacenar la respuesta en una variable */
-//         console.log("Hay coincidencia en los nombres");
-//     } else {
-//         console.log("No hay coincidencia en los nombres");
-//     }
-// }
-
-// compareNames();
-
-
 function compareNames() {
     let match1 = "";
     let match2 = "";
@@ -95,6 +79,7 @@ function compareNames() {
     }
 }
 compareNames();
+
 
 const confirmLastName = confirm('¿Desea comparar los apellidos?');
 
@@ -128,20 +113,14 @@ if (confirmLastName) {
     compareLastNames();
 }
 
+// Bonus
+/* const btn = document.getElementById('btn');
+const inputValue = document.getElementById('firstName').value;
+const contador = 0;
 
-/* --------------------------------- */
-
-/* 
-const setColor = (string, color) => `<span style = 'color: '${color};'>${string}</span>`;
-
-//dd
-element.innerHTML = "Victoria <span style = 'color: red;'>Sánchez</span>";
-
-setRed('Sánchez', 'red');
- */
-
-/* --------------------------------- */
-
-// Comparar los apellidos
-
+function click () {
+    if (contador == 0) {
+        
+    }
+} */
 
